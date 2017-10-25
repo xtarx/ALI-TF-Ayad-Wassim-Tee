@@ -19,9 +19,9 @@ flags.DEFINE_integer('z_dim', 100, 'a number of z dimension layer')
 flags.DEFINE_string('z_dist', 'normal', 'Distribution for z [normal]')
 flags.DEFINE_string('log_dir', 'results_mias/models', 'saved image directory')
 flags.DEFINE_integer('max_epoch', 500, 'A number of epochs to train')
-flags.DEFINE_boolean('is_train', False, 'True for training, False for testing')
+flags.DEFINE_boolean('is_train', True, 'True for training, False for testing')
 flags.DEFINE_string('data_dir', 'data', 'data directory')
-flags.DEFINE_string('data', 'mnist', 'fuel data')
+flags.DEFINE_string('data', 'mias', 'fuel data')
 flags.DEFINE_boolean('monitor', True, 'True for monitoring training process')
 FLAGS = flags.FLAGS
 
